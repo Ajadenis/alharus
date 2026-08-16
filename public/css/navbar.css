@@ -1,0 +1,105 @@
+/* navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 4%;
+    background-color: rgba(255, 255, 255);
+    border-bottom: 1px solid var(--primary-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+}
+.navbar .navbar-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    font-style: italic;
+}
+
+.navbar .dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.navbar .dropdown .dropbtn {
+    display: inline-block;
+    color: var(--primary-color);
+    text-align: center;
+    padding: 0 0.5rem;
+    text-decoration: none;
+}
+
+.navbar .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--secondary-color);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.navbar .dropdown .dropdown-content a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    display: block;
+}
+
+.navbar .dropdown .dropdown-content a:hover {
+    color: var(--hover-color);
+}
+
+.navbar .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.navbar .navbar-nav a {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin: 0 1rem;
+    display: inline-block;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--hover-color);
+}
+
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary-color);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+    color: var(--primary-color);
+    margin: 0 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--hover-color);
+}
+
+#menu {
+    display: none;
+}

@@ -1,0 +1,35 @@
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1rem 0 3rem;
+    margin-top: 3rem;
+    clear: both;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+
+footer .social a {
+    color: var(--secondary-color);
+    margin: 1rem;
+}
+
+footer .social a:hover,
+footer .links a:hover {
+    color: var(--hover-color);
+}
+
+footer .links {
+    margin-bottom: 1.4rem;
+}
+
+footer .links a {
+    color: var(--secondary-color);
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    color: var(--secondary-color);
+}

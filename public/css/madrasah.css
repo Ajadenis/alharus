@@ -1,0 +1,70 @@
+table,
+tr,
+td {
+    padding-left: 1rem;
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 75px;
+    font-size: 1.6rem;
+}
+caption {
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+/* Madrasah Section */
+.madrasah {
+    padding: 5rem 4% 1.4rem;
+    color: var(--backgrouond-color);
+}
+.madrasah h2 {
+    font-size: 2.6rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.madrasah .head-img img {
+    padding-bottom: 5rem;
+    width: 25%;
+    height: 25%;
+    margin: auto;
+    display: block;
+}
+li {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+.madrasah p {
+    font-size: 1.6rem;
+    text-indent: 3rem;
+    text-align: justify;
+}
+.madrasah .row {
+    display: flex;
+    margin-bottom: 3rem;
+}
+.madrasah .row .madrasah-img {
+    flex: 1 1 40rem;
+}
+.madrasah .row .madrasah-img img {
+    width: 100%;
+    height: 100%;
+}
+.madrasah .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+.madrasah h3 {
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    margin-top: 5rem;
+    text-align: center;
+}
+.madrasah .row .content p {
+    margin-bottom: 0.8rem;
+    font-size: 1.6rem;
+    text-indent: 3rem;
+    text-align: justify;
+}
