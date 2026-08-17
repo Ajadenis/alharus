@@ -1,0 +1,56 @@
+/* Table */
+table {
+    width: 100%;
+}
+.no-otomatis {
+    counter-reset: serial-number;
+}
+.no-otomatis td:first-child:before {
+    counter-increment: serial-number;
+    content: counter(serial-number);
+}
+table,
+tr,
+td,
+th {
+    border: 1px solid black;
+    border-collapse: collapse;
+    height: 75px;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 2rem;
+    margin: auto;
+}
+td {
+    text-align: justify;
+}
+.foto-guru {
+    height: auto;
+    width: 250px;
+}
+.foto-guru img {
+    align-items: center;
+    display: block;
+    width: 250px;
+    height: auto;
+}
+caption {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* Guru */
+.guru {
+    padding: 9rem 4% 1.4rem;
+    color: var(--backgrouond-color);
+}
+.guru h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.guru p {
+    text-align: center;
+    margin: auto;
+    max-width: 30rem;
+}

@@ -31,6 +31,11 @@
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
     @stack('index')
     @stack('madrasah')
+    @stack('guru')
+    @stack('isma')
+    @stack('unggul')
+    @stack('kegiatan')
+    @stack('fasilitas')
   </head>
 <body>
     @include('partials.navbar')

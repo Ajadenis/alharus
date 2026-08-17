@@ -9,13 +9,13 @@
           <a href="#">Profil</a>
           <div class="dropdown-content">
             <a href="{{ route('profil.madrasah') }}">Madrasah</a>
-            <a href="./views/guru.html">Guru</a>
-            <a href="./views/isma.html">ISMA</a>
+            <a href="{{ route('profil.guru') }}">Guru</a>
+            <a href="{{ route('profil.isma') }}">ISMA</a>
           </div>
         </div>
-        <a href="./views/unggul.html">Program Unggulan</a>
-        <a href="./views/kegiatan.html">Kegiatan</a>
-        <a href="./views/fasilitas.html">Fasilitas</a>
+        <a href="{{ route('program-unggulan.index') }}">Program Unggulan</a>
+        <a href="{{ route('kegiatan.index') }}">Kegiatan</a>
+        <a href="{{ route('fasilitas.index') }}">Fasilitas</a>
       </div>
 
       <div class="navbar-extra">

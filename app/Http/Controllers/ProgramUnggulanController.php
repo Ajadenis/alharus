@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class ProgramUnggulanController extends Controller
 {
-    public function program()
+    public function index()
     {
         return view('program-unggulan.index');
     }

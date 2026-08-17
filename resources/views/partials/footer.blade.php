@@ -17,7 +17,7 @@
         ></a>
       </div>
       <div class="links">
-        <a href="index.html">Home</a>
+        <a href="/">Home</a>
         <a href="./views/unggul.html">Program Unggulan</a>
         <a href="./views/kegiatan.html">Kegiatan</a>
         <a href="./views/fasilitas.html">Fasilitas</a>
