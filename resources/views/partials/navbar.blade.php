@@ -1,5 +1,5 @@
 <nav class="navbar">
-      <a href="{{ asset('/') }}" class="navbar-logo"
+      <a href="{{ route('home') }}" class="navbar-logo"
         ><img src="{{ asset('images/logo-alharus.png') }}" />MDT Al-Harus</a
       >
 
@@ -19,7 +19,7 @@
       </div>
 
       <div class="navbar-extra">
-        <<img src="{{ asset('images/logo-alharus.png') }}" />
+        <img src="{{ asset('images/logo-alharus.png') }}" />
         <a href="#" id="menu"><i data-feather="menu"></i></a>
       </div>
     </nav>

@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('guru')
+@push('styles')
     <link rel="stylesheet" href="{{ asset('css/guru.css') }}">
 @endpush
 

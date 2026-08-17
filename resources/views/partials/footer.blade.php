@@ -17,12 +17,12 @@
         ></a>
       </div>
       <div class="links">
-        <a href="/">Home</a>
-        <a href="./views/unggul.html">Program Unggulan</a>
-        <a href="./views/kegiatan.html">Kegiatan</a>
-        <a href="./views/fasilitas.html">Fasilitas</a>
+        <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('program-unggulan.index') }}">Program Unggulan</a>
+        <a href="{{ route('kegiatan.index') }}">Kegiatan</a>
+        <a href="{{ route('fasilitas.index') }}">Fasilitas</a>
       </div>
       <div class="credit">
-        <p>Createrd By <a href="">Al-Harus</a>. | %copy; 2025.</p>
+        <p>Created By <a href="">Al-Harus</a>. | &copy; 2025.</p>
       </div>
     </footer>

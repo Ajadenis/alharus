@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('isma')
+@push('styles')
 <link rel="stylesheet" href="{{ asset('css/isma.css') }}">
 @endpush
 

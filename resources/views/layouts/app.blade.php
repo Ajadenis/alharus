@@ -2,11 +2,11 @@
 <html lang="en">
     <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MDT Al-Harus</title>
 
     <!-- favicon -->
-    <link rel="shorcut icon" href="{{ asset('images/logo-title.ico') }}" />
+    <link rel="shortcut icon" href="{{ asset('images/logo-title.ico') }}" />
 
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,13 +29,10 @@
     <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
-    @stack('index')
-    @stack('madrasah')
-    @stack('guru')
-    @stack('isma')
-    @stack('unggul')
-    @stack('kegiatan')
-    @stack('fasilitas')
+
+    <!-- CSS khusus per halaman -->
+    @stack('styles')
+    
   </head>
 <body>
     @include('partials.navbar')

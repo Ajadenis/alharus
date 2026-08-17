@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('fasilitas')
+@push('styles')
 <link rel="stylesheet" href="{{ asset('css/fasilitas.css') }}">
 @endpush
 

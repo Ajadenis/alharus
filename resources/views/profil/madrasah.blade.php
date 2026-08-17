@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@push('madrasah')
+@push('styles')
     <link rel="stylesheet" href="{{ asset('css/madrasah.css') }}">
 @endpush
 
