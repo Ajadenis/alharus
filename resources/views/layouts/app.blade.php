@@ -52,8 +52,6 @@
     <script>
       feather.replace();
     </script>
-    <!-- JS -->
-    <script src="{{ asset('js/script.js') }}"></script>
 
     <!-- Vercel -->
     <script>

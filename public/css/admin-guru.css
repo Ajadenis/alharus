@@ -1,0 +1,442 @@
+:root {
+    --primary-color: #1a6e18;
+    --secondary-color: #fff;
+    --background-color: #010101;
+    --hover-color: #00ff00;
+}
+/* ========================================
+   ADMIN GURU CSS
+   ======================================== */
+
+.admin-wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.admin-header-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.admin-header-section .header-left h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.admin-header-section .header-left h2 i {
+    color: var(--primary-color);
+}
+
+.admin-header-section .header-left .subtitle {
+    color: #888;
+    margin: 0.2rem 0 0 2.2rem;
+    font-size: 0.9rem;
+}
+
+.filter-section {
+    background: #fff;
+    padding: 1.2rem;
+    border-radius: 0.8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    align-items: center;
+}
+
+.filter-group {
+    position: relative;
+    flex: 1;
+    min-width: 160px;
+}
+
+.filter-group.search-group {
+    flex: 2;
+    min-width: 200px;
+}
+
+.filter-group.search-group i {
+    position: absolute;
+    left: 0.8rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa;
+}
+
+.filter-group input,
+.filter-group select {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    padding-left: 2.2rem;
+    border: 1.5px solid #e0e0e0;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    background: #f8f9fa;
+    transition: all 0.3s ease;
+}
+
+.filter-group select {
+    padding-left: 0.8rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23888' d='M6 8L1 3h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.8rem center;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background: var(--hover-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(26, 115, 232, 0.3);
+}
+
+.btn-filter {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.btn-filter:hover {
+    background: var(--hover-color);
+}
+
+.btn-reset {
+    background: #6c757d;
+    color: #fff;
+}
+
+.btn-reset:hover {
+    background: #5a6268;
+}
+
+.alert {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
+    margin-bottom: 1.2rem;
+    animation: slideDown 0.3s ease;
+}
+
+.alert-success {
+    background: #d4edda;
+    color: #155724;
+    border-left: 4px solid #28a745;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table-container {
+    background: #fff;
+    border-radius: 0.8rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.admin-table thead {
+    background: #f8f9fa;
+}
+
+.admin-table th {
+    padding: 0.7rem 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.admin-table td {
+    padding: 0.7rem 1rem;
+    border-bottom: 1px solid #f0f0f0;
+    vertical-align: middle;
+}
+
+.admin-table tbody tr:hover {
+    background: #f8f9fa;
+}
+
+.table-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+.table-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.badge-jabatan {
+    display: inline-block;
+    padding: 0.15rem 0.6rem;
+    background: #e8f0fe;
+    color: var(--primary-color);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0.1rem 0.2rem;
+}
+
+.badge-mapel {
+    display: inline-block;
+    padding: 0.2rem 0.7rem;
+    background: #e8f0fe;
+    color: var(--primary-color);
+    border-radius: 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 2rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.status-badge .status-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-badge.active {
+    background: #d4edda;
+    color: #155724;
+}
+
+.status-badge.active .status-dot {
+    background: #28a745;
+}
+
+.status-badge.inactive {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.status-badge.inactive .status-dot {
+    background: #dc3545;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+}
+
+.btn-action {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.btn-action:hover {
+    transform: scale(1.1);
+}
+
+.btn-edit {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.btn-edit:hover {
+    background: #ffc107;
+    color: #333;
+}
+
+.btn-toggle {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.btn-toggle:hover {
+    background: #17a2b8;
+    color: #fff;
+}
+
+.btn-delete {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.btn-delete:hover {
+    background: #dc3545;
+    color: #fff;
+}
+
+.delete-form {
+    display: inline;
+}
+
+.empty-row td {
+    padding: 2rem 1rem !important;
+}
+
+.empty-state-admin {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.empty-state-admin i {
+    font-size: 3rem;
+    color: #ddd;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state-admin h4 {
+    font-size: 1rem;
+    color: #555;
+    margin: 0 0 0.3rem 0;
+}
+
+.empty-state-admin p {
+    color: #999;
+    font-size: 0.9rem;
+    margin: 0 0 1rem 0;
+}
+
+.pagination-wrapper {
+    padding: 0.8rem 1rem;
+    border-top: 1px solid #eee;
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-wrapper .pagination {
+    display: flex;
+    gap: 0.2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pagination-wrapper .pagination li a,
+.pagination-wrapper .pagination li span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 0.6rem;
+    border: 1px solid #ddd;
+    border-radius: 0.3rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 0.85rem;
+}
+
+.pagination-wrapper .pagination li a:hover {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+.pagination-wrapper .pagination li.active span {
+    background: var(--primary-color);
+    color: #fff;
+    border-color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .filter-group.search-group {
+        min-width: unset;
+    }
+
+    .admin-table {
+        font-size: 0.8rem;
+    }
+
+    .admin-table th,
+    .admin-table td {
+        padding: 0.5rem 0.6rem;
+    }
+
+    .table-image {
+        width: 40px;
+        height: 40px;
+    }
+
+    .badge-jabatan {
+        font-size: 0.6rem;
+        padding: 0.1rem 0.4rem;
+    }
+}

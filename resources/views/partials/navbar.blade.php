@@ -4,18 +4,36 @@
       >
 
       <div class="navbar-nav">
-        <a href="{{ route('home') }}">Home</a>
+        <!-- HOME -->
+        <a href="{{ route('home') }}">
+            <i class="bi bi-house"></i> Home
+        </a>
+
+        <!-- DROPDOWN PROFIL -->
         <div class="dropdown">
-          <a href="#">Profil</a>
-          <div class="dropdown-content">
-            <a href="{{ route('profil.madrasah') }}">Madrasah</a>
-            <a href="{{ route('profil.guru') }}">Guru</a>
-            <a href="{{ route('profil.isma') }}">ISMA</a>
-          </div>
+            <a href="#" class="dropbtn"><i class="bi bi-person-circle"></i> Profil</a>
+            <div class="dropdown-content">
+                <a href="{{ route('profil.madrasah') }}">
+                    <i class="bi bi-building"></i> Madrasah
+                </a>
+                <a href="{{ route('profil.guru') }}">
+                    <i class="bi bi-people"></i> Guru
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="{{ route('profil.isma') }}">
+                    <i class="bi bi-person-badge"></i> ISMA
+                </a>
+            </div>
         </div>
-        <a href="{{ route('program-unggulan.index') }}">Program Unggulan</a>
-        <a href="{{ route('kegiatan.index') }}">Kegiatan</a>
-        <a href="{{ route('fasilitas.index') }}">Fasilitas</a>
+         <a href="{{ route('program-unggulan.index') }}">
+            <i class="bi bi-star"></i> Program Unggulan
+        </a>
+        <a href="{{ route('kegiatan.index') }}">
+            <i class="bi bi-calendar-event"></i> Kegiatan
+        </a>
+        <a href="{{ route('fasilitas.index') }}">
+            <i class="bi bi-building"></i> Fasilitas
+        </a>
       </div>
 
       <div class="navbar-extra">

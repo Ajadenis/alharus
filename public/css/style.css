@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1a6e18;
     --secondary-color: #fff;
-    --backgrouond-color: #010101;
+    --background-color: #010101;
     --hover-color: #00ff00;
 }
 
@@ -18,80 +18,6 @@ body {
     font-family: "poppins", sans-serif;
     background-color: var(--secondary-color);
     color: #fff;
+    padding-top: 80px;
     /* min-height: 2000px;*/
-}
-
-/* Media Queries */
-/* Laptop */
-@media (max-width: 1366px) {
-    html {
-        font-size: 75%;
-    }
-}
-/* Table */
-@media (max-width: 1024px) {
-    html {
-        font-size: 62.5%;
-    }
-    #menu {
-        display: inline-block;
-    }
-    .navbar .navbar-nav {
-        position: absolute;
-        top: 100%;
-        right: -100%;
-        background-color: var(--secondary-color);
-        width: 30rem;
-        height: 100vh;
-        transition: 0.3s;
-    }
-    .navbar .navbar-nav.active {
-        right: 0;
-    }
-    .navbar .navbar-extra img {
-        display: none;
-    }
-    .navbar .navbar-nav a {
-        display: block;
-        margin: 1.5rem;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-    }
-    .navbar .navbar-nav a::after {
-        transform-origin: 0 0;
-    }
-    .navbar .navbar-nav a:hover::after {
-        transform: scaleX(0.2);
-    }
-    .navbar .dropdown {
-        display: block;
-        position: relative;
-    }
-    .main .row {
-        flex-wrap: wrap;
-    }
-    .main .row .main-img img {
-        height: 24rem;
-        object-fit: cover;
-        object-position: center;
-    }
-    .main .row .content {
-        padding: 1rem;
-    }
-    .main .row .content h3 {
-        font-size: 2rem;
-        margin-top: 1rem;
-    }
-    .main .row .content p {
-        font-size: 1.6rem;
-    }
-}
-/* Mobile Phone */
-@media (max-width: 480px) {
-    html {
-        font-size: 58%;
-    }
-    footer {
-        font-size: 1.6rem;
-    }
 }
